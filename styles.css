@@ -1,0 +1,139 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+    .attribution { font-size: 11px; text-align: center; color: hsl(179, 62%, 43%);}
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    body{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      background-color: hsl(204, 43%, 93%);
+      min-height: 100vh;
+      font-family: "Karla",serif;
+      margin: 0;
+    }
+    
+    .content{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      max-width: 100%;
+      width: 40rem;
+      border-radius: 0.5rem;
+    }
+    .top{
+      display: grid;
+      grid-template-columns: 1fr;
+      padding: 2rem;
+      
+      justify-content: center;
+      align-items: center;
+      background-color: white;
+      border-radius: 0.5rem 0.5rem 0rem 0rem;
+    }
+    .top h1{
+      color: hsl(179, 62%, 43%);
+      margin: 0rem;
+      font-size: 1.5rem;
+    }
+    .top h2{
+      color: hsl(71, 73%, 54%);
+      margin-bottom: 0rem;
+      margin-top: 1.5rem;
+      font-size: 1.1rem;
+    }
+    .top p{
+      color: hsl(218, 22%, 67%);
+      font-size: 0.9rem;
+      line-height: 1.5rem;
+      max-width: 90%;
+    }
+    .bottom{
+      display: grid;
+      grid-template-columns: 50% 50% ;
+      justify-content: center;
+    }
+    .left{
+      padding: 2rem;
+      background-color: hsl(179, 60%, 39%);
+      border-radius: 0rem 0rem 0rem 0.5rem;
+    }
+    .left h2{
+      font-size: 1.1rem;
+    }
+    span{
+      font-size: 1.9rem;
+      font-weight: 700;
+      color: white;
+    }
+    .access{
+      margin-bottom: 1.8rem;
+    }
+    .price{
+      color: hsl(204, 43%, 93%);
+    }
+    .right{
+      padding: 2rem;
+      background-color: hsl(179, 62%, 43%);
+      border-radius: 0rem 0rem 0.5rem 0rem;
+    }
+    .right h2{
+      font-size: 1.1rem;
+    }
+    .right p{
+      color: hsl(204, 43%, 93%);
+      width: 13rem;
+      font-size: 1rem;
+    }
+    .btn{
+      height: 3rem;
+      width: 100%;
+      cursor: pointer;
+      border-radius: 0.3rem;
+      border: none;
+      background-color: hsl(71, 73%, 54%);
+      color: white;
+      box-shadow: 2px 10px 10px 1px hsla(214, 3%, 41%, 0.5);
+    }
+    @media(max-width:500px){
+       .bottom{
+        grid-template-columns: 100%;
+      }
+      .main{
+        width: 20rem;
+      }
+      .content{
+        display: grid;
+        grid-template-columns: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: 0rem;
+        padding: 0rem;
+        width: 100%;
+        
+        max-width: 100%;
+      }
+      .top h1{
+        font-size: 1.3rem;
+      }
+      .top h2{
+        font-size: 1rem;
+      }
+      .top p{
+        line-height: 1.5rem;
+      }
+      .top{
+        padding: 1.5rem;
+      }
+      .left{
+        border-radius: 0rem 0rem 0rem 0rem;
+        padding: 1.5rem;
+      }
+      .right{
+        border-radius: 0rem 0rem 0.5rem 0.5rem;
+        padding: 1.5rem;
+      }
+    }
